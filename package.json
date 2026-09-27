@@ -1,0 +1,39 @@
+{
+  "name": "legible-scanner",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Free public Solana scanner — Launchpad Pulse + contract scan. Read-only, no key material.",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "ts-node --transpile-only src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --require ts-node/register --test src/heat.test.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "bs58": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/legible-apps/legible-scanner.git"
+  },
+  "keywords": [
+    "solana",
+    "token",
+    "scanner",
+    "security",
+    "rug",
+    "honeypot",
+    "token-2022"
+  ]
+}
